@@ -1,0 +1,29 @@
+
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsIm5hbWUiOiJhemlzNSIsImVtYWlsIjoiYXppczVAZ21haWwuY29tIiwiaWF0IjoxNzIxMTEzODMwLCJleHAiOjE3MjExMTM4NTB9.OrP1770Uv3D5KTgjtwz0NjLC4u7LeFbyvAU8bmBMMgk
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "azis5",
+    "email": "azis5@gmail.com",
+    "password": "1234",
+    "confirmPassword": "1234"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+     "email": "azis5@gmail.com",
+    "password": "1234"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
